@@ -2,14 +2,14 @@
 
 This project uses AWS services to automatically detect faces in images uploaded to S3 and saves the results to DynamoDB.
 
-#BackGround
+# Background
 I wanted to familiarize myself with AWS services and wanted to learn how AWS services could work together to solve a real-world problem. Face detection is used in things like ID verification and security - so I thought it'd be a good challenge to build a small version of that on AWS.
 
-#Understanding
+# Understanding 
 
 The idea is that an image is uploaded to S3 which triggers Lambda to use Rekognition to analyze it and then the results are saved in dynamoDB.
 
-#Implementation
+# Implementation
 How I built it:
 - S3 Bucket: Stores the uploaded images
 - Lambda Function: Runs when a new image is added
@@ -24,7 +24,7 @@ Tech Stack:
 - Amazon DynamoDB
 - Python & Boto3
 
-#Lessons Learned
+# Lessons Learned
 
 This project taught me a lot about how AWS services really work together, especially when it comes to permissions and how different services communicate. I ran into several issues that I had to troubleshoot, and each one helped me understand the bigger picture.
 
